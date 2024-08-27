@@ -1,8 +1,5 @@
 const stompClient = new StompJs.Client({
     brokerURL: 'wss://websocket-production-711e.up.railway.app/websocketdudu',
-    connectHeaders: {
-
-    },
     debug: function (str) {
         console.log(str);
     },
