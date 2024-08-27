@@ -20,9 +20,7 @@ public class WebSocketConfig implements WebSocketMessageBrokerConfigurer {
 
     @Override
     public void registerStompEndpoints(StompEndpointRegistry registry) {
-        registry.addEndpoint("/websocket")
-                .setAllowedOrigins("https://websocket-production-711e.up.railway.app")
-                .withSockJS();
+        registry.addEndpoint("/websocket");
     }
 
 
