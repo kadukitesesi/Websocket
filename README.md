@@ -10,7 +10,3 @@ Neste projeto criei um chat em tempo real utilizando Spring websocket
 - Spring Boot
 - Lombok
 - WebSocket
-
-### Como utilizar
-
-Acesse 
