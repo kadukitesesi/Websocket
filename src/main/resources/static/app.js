@@ -1,6 +1,16 @@
 const stompClient = new StompJs.Client({
-    brokerURL: 'wss://websocket-production-711e.up.railway.app'
+    brokerURL: 'wss://websocket-production-711e.up.railway.app/websocket',
+    connectHeaders: {
+
+    },
+    debug: function (str) {
+        console.log(str);
+    },
+    reconnectDelay: 5000,
+    heartbeatIncoming: 4000,
+    heartbeatOutgoing: 4000
 });
+
 
 stompClient.onConnect = (frame) => {
     setConnected(true);
